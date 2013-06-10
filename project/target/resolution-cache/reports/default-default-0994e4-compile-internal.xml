@@ -9,7 +9,7 @@
 		extra-scalaVersion="2.9.2"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130610185112"/>
+		date="20130610220931"/>
 	<dependencies>
 		<module organisation="net.virtual-void" name="sbt-dependency-graph">
 			<revision name="0.7.3" status="release" pubdate="20130428185949" resolver="public" artresolver="public" homepage="http://github.com/jrudolph/sbt-dependency-graph" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
@@ -59,8 +59,8 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="sbt-android-plugin">
-			<revision name="0.6.3-20130429-SNAPSHOT" status="integration" pubdate="20130608220625" resolver="local" artresolver="local" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="true" default="false" conf="default(compile), compile" position="0">
-				<metadata-artifact status="no" details="" size="2060" time="0" location="/Users/johnmay/.ivy2/cache/scala_2.9.2/sbt_0.12/org.scala-sbt/sbt-android-plugin/ivy-0.6.3-20130429-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/Users/johnmay/.ivy2/local/org.scala-sbt/sbt-android-plugin/scala_2.9.2/sbt_0.12/0.6.3-20130429-SNAPSHOT/ivys/ivy.xml"/>
+			<revision name="0.6.3-20130429-SNAPSHOT" status="integration" pubdate="20130610220850" resolver="local" artresolver="local" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="true" default="false" conf="default(compile), compile" position="0">
+				<metadata-artifact status="no" details="" size="2060" time="0" location="/Users/johnmay/.ivy2/cache/scala_2.9.2/sbt_0.12/org.scala-sbt/sbt-android-plugin/ivy-0.6.3-20130429-SNAPSHOT.xml" searched="true" original-local-location="/Users/johnmay/.ivy2/local/org.scala-sbt/sbt-android-plugin/scala_2.9.2/sbt_0.12/0.6.3-20130429-SNAPSHOT/ivys/ivy.xml" origin-is-local="true" origin-location="/Users/johnmay/.ivy2/local/org.scala-sbt/sbt-android-plugin/scala_2.9.2/sbt_0.12/0.6.3-20130429-SNAPSHOT/ivys/ivy.xml"/>
 				<caller organisation="default" name="default-0994e4" conf="optional, compile, provided, compile-internal" rev="0.6.3-20130429-SNAPSHOT" rev-constraint-default="0.6.3-20130429-SNAPSHOT" rev-constraint-dynamic="0.6.3-20130429-SNAPSHOT" callerrev="0.1-SNAPSHOT" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2"/>
 				<artifacts>
 					<artifact name="sbt-android-plugin" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="33978" time="0" location="/Users/johnmay/.ivy2/local/org.scala-sbt/sbt-android-plugin/scala_2.9.2/sbt_0.12/0.6.3-20130429-SNAPSHOT/srcs/sbt-android-plugin-sources.jar">
