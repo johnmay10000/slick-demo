@@ -15,7 +15,7 @@
 [debug] All initially invalidated sources: Set(/Users/johnmay/projects/mogen/android/slick-demo/src/main/scala/MainActivity.scala, /Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/src_managed/main/java/com/oomphhq/slick/demo/R.java, /Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/src_managed/main/java/com/oomphhq/slick/demo/BuildConfig.java, /Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/src_managed/main/scala/com/oomphhq/slick/demo/TR.scala)
 [debug] Recompiling all 4 sources: invalidated sources (4) exceeded 50.0% of all sources
 [info] Compiling 2 Scala sources and 2 Java sources to /Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/classes...
-[debug] Running cached compiler 54856d00, interfacing (CompilerInterface) with Scala compiler version 2.10.1
+[debug] Running cached compiler 25cf850b, interfacing (CompilerInterface) with Scala compiler version 2.10.1
 [debug] Calling Scala compiler with arguments  (CompilerInterface):
 [debug] 	-deprecation
 [debug] 	-unchecked
@@ -30,7 +30,7 @@
 [warn]                          ^
 [warn] there were 4 feature warning(s); re-run with -feature for details
 [warn] two warnings found
-[debug] Scala compilation took 11.948173 s
+[debug] Scala compilation took 11.691733 s
 [debug] Calling Javac with arguments:
 [debug] 	-encoding
 [debug] 	UTF-8
@@ -46,8 +46,8 @@
 [debug] 	/Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/src_managed/main/java/com/oomphhq/slick/demo/R.java
 [debug] Attempting to call javac directly...
 [debug] javac returned exit code: 0
-[debug] Java compilation took 0.728372 s
-[debug] Java compilation and analysis took 0.825125 s
+[debug] Java compilation took 0.669207 s
+[debug] Java compilation and analysis took 0.756097 s
 [debug] Step 2 changed sources and immdediate dependencies:
 [debug] 	Set(/Users/johnmay/projects/mogen/android/slick-demo/src/main/scala/MainActivity.scala, /Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/src_managed/main/java/com/oomphhq/slick/demo/R.java, /Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/src_managed/main/java/com/oomphhq/slick/demo/BuildConfig.java, /Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/src_managed/main/scala/com/oomphhq/slick/demo/TR.scala)
 [debug] Non-trivial strongly connected components: 

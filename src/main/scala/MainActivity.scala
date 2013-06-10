@@ -93,7 +93,7 @@ class MainActivity extends Activity with TypedActivity {
 //      ("Espresso",          150, 9.99, 0, 0),
 //      ("Colombian_Decaf",   101, 8.99, 0, 0),
 //      ("French_Roast_Decaf", 49, 9.99, 0, 0)
-//    )
+    )
 
     // Iterate through all coffees and output them
 //    println("Coffees:")
