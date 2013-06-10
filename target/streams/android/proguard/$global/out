@@ -1,0 +1,199 @@
+[debug] executing proguard: -injars
+[debug] "/Users/johnmay/projects/mogen/android/slick-demo/target/scala-2.10/classes":"/Users/johnmay/projects/mogen/android/slick-demo/lib/sqldroid-1.0.0RC1.jar"(!META-INF/MANIFEST.MF,!**/R.class,!**/R$*.class,!**/TR.class,!**/TR$.class,!**/library.properties):"/Users/johnmay/.sbt/boot/scala-2.10.1/lib/scala-library.jar"(!META-INF/MANIFEST.MF,!**/R.class,!**/R$*.class,!**/TR.class,!**/TR$.class,!**/library.properties):"/Users/johnmay/.ivy2/cache/com.typesafe.slick/slick_2.10/jars/slick_2.10-1.0.1.jar"(!META-INF/MANIFEST.MF,!**/R.class,!**/R$*.class,!**/TR.class,!**/TR$.class,!**/library.properties):"/Users/johnmay/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.4.jar"(!META-INF/MANIFEST.MF,!**/R.class,!**/R$*.class,!**/TR.class,!**/TR$.class,!**/library.properties):"/Users/johnmay/.ivy2/cache/com.h2database/h2/jars/h2-1.3.166.jar"(!META-INF/MANIFEST.MF,!**/R.class,!**/R$*.class,!**/TR.class,!**/TR$.class,!**/library.properties)
+[debug] -outjars
+[debug] "/Users/johnmay/projects/mogen/android/slick-demo/target/classes.min.jar"
+[debug] -libraryjars
+[debug] "/Users/johnmay/Android/android-sdk-mac_x86/platforms/android-17/android.jar"
+[debug] -dontoptimize
+[debug] -dontwarn
+[debug] -dontobfuscate
+[debug] -dontnote scala.Enumeration
+[debug] -dontnote org.xml.sax.EntityResolver
+[debug] -keep public class * extends android.app.Activity
+[debug] -keep public class * extends android.app.Service
+[debug] -keep public class * extends android.app.backup.BackupAgent
+[debug] -keep public class * extends android.appwidget.AppWidgetProvider
+[debug] -keep public class * extends android.content.BroadcastReceiver
+[debug] -keep public class * extends android.content.ContentProvider
+[debug] -keep public class * extends android.view.View
+[debug] -keep public class * extends android.app.Application
+[debug] -keep public class com.oomphhq.slick.demo.** { public protected *; }
+[debug] -keep public class * implements junit.framework.Test { public void test*(); }
+[debug] 
+[debug]                   -keepclassmembers class * implements java.io.Serializable {
+[debug]                     private static final java.io.ObjectStreamField[] serialPersistentFields;
+[debug]                     private void writeObject(java.io.ObjectOutputStream);
+[debug]                     private void readObject(java.io.ObjectInputStream);
+[debug]                     java.lang.Object writeReplace();
+[debug]                     java.lang.Object readResolve();
+[debug]                    }
+[debug]                    
+[debug] 
+[debug] -verbose
+[debug] -dontusemixedcaseclassnames
+[debug] -dontskipnonpubliclibraryclasses
+[debug] -dontoptimize
+[debug] -dontpreverify
+[debug] -keep public class scala.Function1
+[debug] -keep public class scala.reflect.ScalaSignature
+[debug] -keep public class scala.collection.Seq
+[debug] -keep public class scala.collection.Iterable
+[debug] -keep public class scala.slick.ast.TableNode
+[debug] -keep public class scala.runtime.VolatileObjectRef
+[debug] -keep public class scala.slick.ast.Node
+[debug] -keep public class scala.collection.IndexedSeq
+[debug] -keep public class scala.Function2
+[debug] -keep public class scala.collection.immutable.List
+[debug] -keep public class scala.slick.lifted.TypeMapper
+[debug] -keep public class scala.slick.driver.BasicDriver
+[debug] -keep public class scala.slick.lifted.Shape
+[debug] -keep public class scala.Option
+[debug] -keep public class scala.slick.lifted.ForeignKeyAction
+[debug] -keep public class scala.slick.session.PositionedResult
+[debug] -keep public class scala.slick.driver.BasicProfile
+[debug] -keep public class scala.slick.session.PositionedParameters
+[debug] -keep public class scala.collection.immutable.Nil$
+[debug] -keep public class scala.concurrent.forkjoin.LinkedTransferQueue
+[debug] -keep public class scala.collection.SeqLike {*;}
+[debug] -keep public class scala.collection.mutable.SeqLike {*;}
+[debug] -keep public class scala.collection.Seq { scala.Int hashCode; }
+[debug] -keep public class scala.Function0
+[debug] -keep public class scala.collection.GenSeq
+[debug] -keep public class scala.concurrent.forkjoin.LinkedTransferQueue$Node { java.lang.Thread waiter; }
+[debug] -keep public class scala.Function0
+[debug] -keep public class scala.Function1
+[debug] -keep public class scala.Function2
+[debug] -keep public class scala.Function3
+[debug] -keep public class scala.Function4
+[debug] -keep public class scala.Function6
+[debug] -keep public class scala.Tuple2
+[debug] -keep public class scala.Tuple3
+[debug] -keep public class scala.Tuple4
+[debug] -keep public class scala.Tuple5
+[debug] -keep public class scala.actors.AbstractActor
+[debug] -keep public class scala.actors.MQueue
+[debug] -keep public class scala.actors.OutputChannel
+[debug] -keep public class scala.collection.immutable.List
+[debug] -keep public class scala.Enumeration$Value
+[debug] -keep public class scala.Option
+[debug] -keep public class scala.PartialFunction
+[debug] -keep public class scala.ref.WeakReference
+[debug] -keep public class scala.collection.immutable.StringLike
+[debug] -keep public class scala.actors.IScheduler
+[debug] -keep public class scala.actors.Future
+[debug] -keep public class org.slf4j.Marker
+[debug] -keep public class scala.collection.generic.CanBuildFrom
+[debug] -keep public class scala.collection.Iterable
+[debug] -keep public class scala.collection.Map
+[debug] -keep public class scala.collection.immutable.IndexedSeq
+[debug] -keep public class scala.collection.immutable.Map
+[debug] -keep public class scala.collection.immutable.HashSet
+[debug] -keep public class scala.collection.immutable.HashMap
+[debug] -keep public class scala.collection.immutable.LongMap
+[debug] -keep public class scala.collection.mutable.Buffer
+[debug] -keep public class scala.collection.mutable.HashEntry
+[debug] -keep public class scala.collection.mutable.HashMap
+[debug] -keep public class scala.collection.mutable.HashSet
+[debug] -keep public class scala.collection.mutable.LinkedHashSet
+[debug] -keep public class scala.collection.mutable.Publisher
+[debug] -keep public class scala.collection.mutable.Set
+[debug] -keep public class scala.collection.mutable.StringBuilder
+[debug] -keep public class scala.collection.mutable.Subscriber
+[debug] -keep public class scala.collection.script.Message
+[debug] -keep public class scala.collection.Seq
+[debug] -keep public class scala.collection.Set
+[debug] -keep public class scala.collection.Traversable
+[debug] -keep public class scala.collection.TraversableLike
+[debug] -keep public class scala.collection.TraversableOnce
+[debug] -keep public class scala.concurrent.Lock
+[debug] -keep public class scala.math.Numeric
+[debug] -keep public class scala.math.Ordering
+[debug] -keep public class scala.Predef$$less$colon$less
+[debug] -keep public class scala.reflect.ClassManifest
+[debug] -keep public class scala.reflect.Manifest
+[debug] -keep public class scala.ref.SoftReference
+[debug] -keep public class scala.runtime.BooleanRef
+[debug] -keep public class scala.runtime.BoxedUnit
+[debug] -keep public class scala.runtime.ObjectRef
+[debug] -keep public class scala.runtime.IntRef
+[debug] -keep public class scala.runtime.LongRef
+[debug] -keep public class scala.Some
+[debug] -keep public class scala.Symbol
+[debug] -keep public class scala.util.Random
+[debug] -keep public class scala.xml.Elem
+[debug] -keep public class scala.xml.Node
+[debug] -keep public class scala.runtime.VolatileObjectRef
+[debug] -keep public class scala.collection.mutable.ObservableSet
+[debug] -keep public class * extends android.app.Activity
+[debug] -keep public class * extends android.app.Application
+[debug] -keep public class * extends android.app.Service
+[debug] -keep public class * extends android.content.BroadcastReceiver
+[debug] -keep public class * extends android.content.ContentProvider
+[debug] -keep public class * extends android.app.backup.BackupAgentHelper
+[debug] -keep public class * extends android.preference.Preference
+[debug] -keep public class com.android.vending.licensing.ILicensingService
+[debug] -keep public class scala.slick.**
+[debug] -keep public class org.h2.**
+[debug] -keep public class scala.collection.script.**
+[debug] 
+[debug] -dontnote android.app.backup.BackupAgentHelper
+[debug] -dontnote com.android.vending.licensing.ILicensingService
+[debug] 
+[debug] -keepclassmembers class * {
+[debug]     static android.os.Parcelable$Creator *;
+[debug] }
+[debug] 
+[debug] -keepclassmembers class * {
+[debug]     void clear();
+[debug] }
+[debug] 
+[debug] -keepclasseswithmembernames class * {
+[debug]     native <methods>;
+[debug] }
+[debug] 
+[debug] -keepclasseswithmembers class * {
+[debug]     public <init>(android.content.Context, android.util.AttributeSet);
+[debug] }
+[debug] 
+[debug] -keepclasseswithmembers class * {
+[debug]     public <init>(android.content.Context, android.util.AttributeSet, int);
+[debug] }
+[debug] 
+[debug] -keepclassmembers class * extends android.app.Activity {
+[debug]    public void *(android.view.View);
+[debug] }
+[debug] 
+[debug] -keepclassmembers enum * {
+[debug]     public static **[] values();
+[debug]     public static ** valueOf(java.lang.String);
+[debug] }
+[debug] 
+[debug] -keepclassmembers class * {
+[debug]     ** MODULE$;
+[debug] }
+[debug] 
+[debug] -keep class scala.runtime.*MethodCache
+[debug] 
+[debug] -keepclassmembernames class scala.runtime.*MethodCache {
+[debug]     <methods>;
+[debug] }
+[debug] 
+[debug] -keepclassmembers class scala.collection.** {
+[debug]     *;
+[debug] }
+[debug] 
+[debug] -keepattributes SourceFile,LineNumberTable
+[debug] 
+[debug] -keepclassmembers class **.R$* {
+[debug]     public static <fields>;
+[debug] }
+[debug] -keepclassmembers class * extends android.app.Activity {
+[debug]     public void *_*(android.view.View);
+[debug] }
+[debug] -keep public class * extends android.view.View {
+[debug]     public <init>(android.content.Context);
+[debug]     public <init>(android.content.Context, android.util.AttributeSet);
+[debug]     public <init>(android.content.Context, android.util.AttributeSet, int);
+[debug]     public void set*(...);
+[debug] }
+[debug]       
