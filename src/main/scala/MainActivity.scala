@@ -4,10 +4,10 @@ import _root_.android.app.Activity
 import _root_.android.os.Bundle
 import java.util.Properties
 
-import scala.slick.driver.H2Driver.simple._
+//import scala.slick.driver.H2Driver.simple._
 import scala.slick.jdbc.meta.MTable
 
-//import scala.slick.driver.SQLiteDriver.simple._
+import scala.slick.driver.SQLiteDriver.simple._
 import android.util.Log
 
 // Use the implicit threadLocalSession
@@ -20,9 +20,9 @@ class MainActivity extends Activity with TypedActivity {
     setContentView(R.layout.main)
 
     findView(TR.textview).setText("hello, world!")
-    Class.forName("org.h2.Driver")
+//    Class.forName("org.h2.Driver")
 
-//    Class.forName("org.sqldroid.SQLDroidDriver")
+    Class.forName("org.sqldroid.SQLDroidDriver")
     //    val url = "jdbc:sqldroid:" + "/data/data/com.oomphhq.slick.demo" + "/issues.sqlite"
 //    val con = new org.sqldroid.SQLDroidDriver().connect(url , new Properties())
 
@@ -60,8 +60,8 @@ class MainActivity extends Activity with TypedActivity {
 
 //    + "/data/data/com.oomphhq.slick.demo" + "/coffee.sqlite",
 
-    Database.forURL("jdbc:h2:/data/data/com.oomphhq.slick.demo/coffee.sqlite",  driver = "org.h2.Driver") withSession {
-//      Database.forURL("jdbc:sqldroid:mem:test1",  driver = "org.sqldroid.SQLDroidDriver") withSession {
+//    Database.forURL("jdbc:h2:/data/data/com.oomphhq.slick.demo/coffee.sqlite",  driver = "org.h2.Driver") withSession {
+      Database.forURL("jdbc:sqldroid:/data/data/com.oomphhq.slick.demo/coffee2.sqlite",  driver = "org.sqldroid.SQLDroidDriver") withSession {
 //    Database.forURL("jdbc:h2:mem:test1",  driver = "org.h2.Driver") withSession {
       // The session is never named explicitly. It is bound to the current
       // thread as the threadLocalSession that we imported
@@ -69,13 +69,14 @@ class MainActivity extends Activity with TypedActivity {
     // Create the tables, including primary and foreign keys
 
 
-      val tableList = MTable.getTables.list()
-      if (!tableList.exists(_.name.name == Suppliers.tableName)) {
+      val tableSupps = MTable.getTables("SUPPLIERS").list()
+      println(tableSupps)
+      if (!tableSupps.exists(_.name.name == Suppliers.tableName)) {
         Suppliers.ddl.create
       }
 
-
-      if (!tableList.exists(_.name.name == Coffees.tableName)) {
+      val tableCoff = MTable.getTables("COFFEES").list()
+      if (!tableCoff.exists(_.name.name == Coffees.tableName)) {
         Coffees.ddl.create
       }
 
@@ -85,8 +86,8 @@ class MainActivity extends Activity with TypedActivity {
 //    Suppliers.insert(101, "Acme, Inc.", "99 Market Street", "Groundsville", "CA", "95199")
 //    Suppliers.insert( 49, "Superior Coffee", "1 Party Place",    "Mendocino",    "CA", "95460")
 //    Suppliers.insert(150, "The High Ground", "100 Coffee Lane",  "Meadows",      "CA", "93966")
-
-    // Insert some coffees (using JDBC's batch insert feature, if supported by the DB)
+//
+//    // Insert some coffees (using JDBC's batch insert feature, if supported by the DB)
 //    Coffees.insertAll(
 //      ("Colombian",         101, 7.99, 0, 0),
 //      ("French_Roast",       49, 8.99, 0, 0),

@@ -12,13 +12,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <!--<uses-library android:name="scala.library" android:required="true"/>-->
-        <!--<uses-library android:name="scala.collection" android:required="true"/>-->
-        <!--<uses-library android:name="scala.collection.mutable" android:required="true"/>-->
-        <!--<uses-library android:name="scala.collection.immutable" android:required="true"/>-->
-        <!--<uses-library android:name="scala.collection.parallel" android:required="true"/>-->
     </application>
 
-    <uses-sdk android:minSdkVersion="17"/>
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17"/>
 </manifest>

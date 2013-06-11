@@ -4,7 +4,6 @@ resolvers += Resolver.url("scalasbt releases", new URL("http://scalasbt.artifact
 
 resolvers += "Sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
-
 addSbtPlugin("org.scala-sbt" % "sbt-android-plugin" % "0.6.3-20130429-SNAPSHOT" withSources())
 
 addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.5.0-SNAPSHOT")

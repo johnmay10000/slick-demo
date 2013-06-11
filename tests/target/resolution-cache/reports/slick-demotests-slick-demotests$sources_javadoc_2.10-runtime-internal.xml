@@ -7,13 +7,66 @@
 		revision="0.1"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130610202608"/>
+		date="20130611141158"/>
 	<dependencies>
 		<module organisation="slick-demo" name="slick-demo_2.10">
-			<revision name="0.1" status="integration" pubdate="20130610202608" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="0">
+			<revision name="0.1" status="integration" pubdate="20130611141158" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="slick-demotests" name="slick-demotests$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="0.1"/>
 				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.h2database" name="h2">
+			<revision name="1.3.166" status="release" pubdate="20120409025945" resolver="public" artresolver="public" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="4">
+				<license name="The H2 License, Version 1.0" url="http://h2database.com/html/license.html"/>
+				<metadata-artifact status="no" details="" size="2337" time="0" location="/Users/johnmay/.ivy2/cache/com.h2database/h2/ivy-1.3.166.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/h2database/h2/1.3.166/h2-1.3.166.pom"/>
+				<caller organisation="slick-demotests" name="slick-demotests$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.3.166" rev-constraint-default="1.3.166" rev-constraint-dynamic="1.3.166" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="h2" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="963766" time="0" location="/Users/johnmay/.ivy2/cache/com.h2database/h2/srcs/h2-1.3.166-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/h2database/h2/1.3.166/h2-1.3.166-sources.jar"/>
+					</artifact>
+					<artifact name="h2" type="jar" ext="jar" status="no" details="" size="1270638" time="0" location="/Users/johnmay/.ivy2/cache/com.h2database/h2/jars/h2-1.3.166.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/h2database/h2/1.3.166/h2-1.3.166.jar"/>
+					</artifact>
+					<artifact name="h2" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2910940" time="0" location="/Users/johnmay/.ivy2/cache/com.h2database/h2/docs/h2-1.3.166-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/h2database/h2/1.3.166/h2-1.3.166-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.slick" name="slick_2.10">
+			<revision name="1.0.1" status="release" pubdate="20130605035840" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2820" time="0" location="/Users/johnmay/.ivy2/cache/com.typesafe.slick/slick_2.10/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://oss.sonatype.org/content/repositories/releases/com/typesafe/slick/slick_2.10/1.0.1/slick_2.10-1.0.1.pom"/>
+				<caller organisation="slick-demotests" name="slick-demotests$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="slick_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="153408" time="0" location="/Users/johnmay/.ivy2/cache/com.typesafe.slick/slick_2.10/srcs/slick_2.10-1.0.1-sources.jar">
+						<origin-location is-local="false" location="https://oss.sonatype.org/content/repositories/releases/com/typesafe/slick/slick_2.10/1.0.1/slick_2.10-1.0.1-sources.jar"/>
+					</artifact>
+					<artifact name="slick_2.10" type="jar" ext="jar" status="no" details="" size="2753282" time="0" location="/Users/johnmay/.ivy2/cache/com.typesafe.slick/slick_2.10/jars/slick_2.10-1.0.1.jar">
+						<origin-location is-local="false" location="https://oss.sonatype.org/content/repositories/releases/com/typesafe/slick/slick_2.10/1.0.1/slick_2.10-1.0.1.jar"/>
+					</artifact>
+					<artifact name="slick_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2885857" time="0" location="/Users/johnmay/.ivy2/cache/com.typesafe.slick/slick_2.10/docs/slick_2.10-1.0.1-javadoc.jar">
+						<origin-location is-local="false" location="https://oss.sonatype.org/content/repositories/releases/com/typesafe/slick/slick_2.10/1.0.1/slick_2.10-1.0.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.6.4" status="release" pubdate="20111101084538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
+				<metadata-artifact status="no" details="" size="4338" time="0" location="/Users/johnmay/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.6.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.pom"/>
+				<caller organisation="slick-demotests" name="slick-demotests$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="25962" time="0" location="/Users/johnmay/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46413" time="0" location="/Users/johnmay/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.6.4-sources.jar">
+						<origin-location is-local="false" location="https://oss.sonatype.org/content/repositories/releases/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4-sources.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="182332" time="0" location="/Users/johnmay/.ivy2/cache/org.slf4j/slf4j-api/docs/slf4j-api-1.6.4-javadoc.jar">
+						<origin-location is-local="false" location="https://oss.sonatype.org/content/repositories/releases/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4-javadoc.jar"/>
+					</artifact>
 				</artifacts>
 			</revision>
 		</module>
