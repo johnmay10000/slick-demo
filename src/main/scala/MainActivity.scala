@@ -2,7 +2,6 @@ package com.oomphhq.slick.demo
 
 import _root_.android.app.Activity
 import _root_.android.os.Bundle
-import java.util.Properties
 
 //import scala.slick.driver.H2Driver.simple._
 import scala.slick.jdbc.meta.MTable
@@ -23,6 +22,8 @@ class MainActivity extends Activity with TypedActivity {
 //    Class.forName("org.h2.Driver")
 
     Class.forName("org.sqldroid.SQLDroidDriver")
+    deleteDatabase("/data/data/com.oomphhq.slick.demo/mock.sqlite")
+
     //    val url = "jdbc:sqldroid:" + "/data/data/com.oomphhq.slick.demo" + "/issues.sqlite"
 //    val con = new org.sqldroid.SQLDroidDriver().connect(url , new Properties())
 
@@ -61,7 +62,7 @@ class MainActivity extends Activity with TypedActivity {
 //    + "/data/data/com.oomphhq.slick.demo" + "/coffee.sqlite",
 
 //    Database.forURL("jdbc:h2:/data/data/com.oomphhq.slick.demo/coffee.sqlite",  driver = "org.h2.Driver") withSession {
-      Database.forURL("jdbc:sqldroid:/data/data/com.oomphhq.slick.demo/coffee2.sqlite",  driver = "org.sqldroid.SQLDroidDriver") withSession {
+      Database.forURL("jdbc:sqldroid:/data/data/com.oomphhq.slick.demo/mock.sqlite",  driver = "org.sqldroid.SQLDroidDriver") withSession {
 //    Database.forURL("jdbc:h2:mem:test1",  driver = "org.h2.Driver") withSession {
       // The session is never named explicitly. It is bound to the current
       // thread as the threadLocalSession that we imported
@@ -83,18 +84,18 @@ class MainActivity extends Activity with TypedActivity {
 //      (Suppliers.ddl ++ Coffees.ddl).create
 
     // Insert some suppliers
-//    Suppliers.insert(101, "Acme, Inc.", "99 Market Street", "Groundsville", "CA", "95199")
-//    Suppliers.insert( 49, "Superior Coffee", "1 Party Place",    "Mendocino",    "CA", "95460")
-//    Suppliers.insert(150, "The High Ground", "100 Coffee Lane",  "Meadows",      "CA", "93966")
+    Suppliers.insert(101, "Acme, Inc.", "99 Market Street", "Groundsville", "CA", "95199")
+    Suppliers.insert( 49, "Superior Coffee", "1 Party Place",    "Mendocino",    "CA", "95460")
+    Suppliers.insert(150, "The High Ground", "100 Coffee Lane",  "Meadows",      "CA", "93966")
 //
 //    // Insert some coffees (using JDBC's batch insert feature, if supported by the DB)
-//    Coffees.insertAll(
-//      ("Colombian",         101, 7.99, 0, 0),
-//      ("French_Roast",       49, 8.99, 0, 0),
-//      ("Espresso",          150, 9.99, 0, 0),
-//      ("Colombian_Decaf",   101, 8.99, 0, 0),
-//      ("French_Roast_Decaf", 49, 9.99, 0, 0)
-//    )
+    Coffees.insertAll(
+      ("Colombian",         101, 7.99, 0, 0),
+      ("French_Roast",       49, 8.99, 0, 0),
+      ("Espresso",          150, 9.99, 0, 0),
+      ("Colombian_Decaf",   101, 8.99, 0, 0),
+      ("French_Roast_Decaf", 49, 9.99, 0, 0)
+    )
 
     // Iterate through all coffees and output them
 //    println("Coffees:")
