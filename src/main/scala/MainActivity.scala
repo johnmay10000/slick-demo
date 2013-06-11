@@ -106,20 +106,23 @@ class MainActivity extends Activity with TypedActivity {
         }
       }
 
-      val q3 = for {
+      val q2 = for {
         c <- Coffees if c.price < 9.0
         s <- c.supplier
       } yield (c.name, s.name)
 
-      Log.i("SLICK!", q3.list.toString())
+      Log.i("SLICK!", q2.list.toString())
 
-      val query1 = (Coffees).map {
+      val q3 = (Coffees).map {
         case c => c.name.count
       }
-      println(query1.selectStatement)
 
-      Log.i("SLICK!", "query1 = " + query1.firstOption.getOrElse(0))
+      println(q3.firstOption.getOrElse(0))
 
+
+      val q = Query(Coffees)
+      val q4 = q.filter(_.price > 8.0).map(_.name)
+      println(q4.list)
     }
   }
 }
